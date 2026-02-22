@@ -1,220 +1,89 @@
-<!-- index.html -->
+/* ================= HTML ================= */
+/*
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jun Jie | AI Product Builder</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jun Jie | Portfolio</title>
+<link rel="stylesheet" href="styles.css" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
+
 <body>
 
-  <header>
-    <nav>
-      <div class="logo">Jun Jie</div>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#process">Approach</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+<div class="container">
+<nav>
+<div class="logo">JUN JIE</div>
+<ul class="nav-links">
+<li><a href="#work">Work</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
 
-  <!-- HERO -->
-  <section class="hero fade-in">
-    <div class="hero-grid">
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-content">
+<h1>Product Engineer crafting <span class="accent">intelligent digital systems</span></h1>
+<p>I design and build scalable software, automation, and AI-driven products that improve business and user outcomes.</p>
+<a href="#contact" class="btn">Start a conversation</a>
+</div>
 
-      <div class="hero-text">
-        <h1>
-          Designing and building AI products that turn ideas into real businesses
-        </h1>
+<div class="hero-image">
+<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" alt="workspace" />
+</div>
+</div>
+</section>
 
-        <p>
-          I help founders and teams validate and launch AI-driven products quickly.
-          My focus is on speed, clarity, and scalable architecture that creates
-          measurable impact.
-        </p>
+<section id="work">
+<div class="container">
+<h2>Selected Work</h2>
+<div class="work-grid">
 
-        <div class="hero-actions">
-          <a href="#work" class="btn">View Work</a>
-          <a href="#contact" class="btn outline">Book a Consultation</a>
-        </div>
-      </div>
+<div class="work-card reveal">
+<h3>NeighbourBot AI</h3>
+<p>AI-powered chatbot helping residents access services and community insights.</p>
+</div>
 
-      <div class="hero-image float">
-        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200" alt="AI Product" />
-      </div>
+<div class="work-card reveal">
+<h3>Finance ML System</h3>
+<p>Machine learning models designed for predictive analytics and monetisation.</p>
+</div>
 
-    </div>
-  </section>
+</div>
+</div>
+</section>
 
+<section id="about">
+<div class="container about-grid">
 
-  <!-- ABOUT -->
-  <section id="about" class="section-light fade-in">
-    <div class="section-container">
+<div class="about-img">
+<img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" />
+</div>
 
-      <div class="section-intro">
-        <h2>About</h2>
-        <p>
-          I combine product thinking, engineering, and AI to build practical
-          solutions. My work focuses on helping businesses reduce risk, improve
-          efficiency, and unlock new opportunities through intelligent systems.
-        </p>
-      </div>
+<div class="reveal">
+<h2>About</h2>
+<p>I specialise in building intelligent products combining software engineering, machine learning, and automation to deliver measurable results.</p>
+</div>
 
-      <div class="about-grid">
+</div>
+</section>
 
-        <div class="hover-lift">
-          <h3>Product and Business Focus</h3>
-          <p>
-            I prioritise outcomes over complexity. Every solution is designed to
-            validate assumptions, improve decision making, and generate tangible
-            value.
-          </p>
-        </div>
+<section id="contact" class="contact">
+<div class="container">
+<h2>Let’s work together</h2>
+<div class="contact-card reveal">
+<p>Open to collaborations, product development, and consulting opportunities.</p>
+<a class="btn" href="mailto:your@email.com">Contact me</a>
+</div>
+</div>
+</section>
 
-        <div class="hover-lift">
-          <h3>Rapid Execution</h3>
-          <p>
-            I build lean MVPs and automation workflows that move from concept to
-            deployment in weeks, not months.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- WORK -->
-  <section id="work" class="fade-in">
-
-    <div class="section-container">
-
-      <div class="section-intro">
-        <h2>Selected Work</h2>
-        <p>
-          A selection of projects focused on AI, automation, and scalable
-          product development.
-        </p>
-      </div>
-
-
-      <div class="work-grid">
-
-        <article class="work-card reveal">
-          <img src="https://images.unsplash.com/photo-1526378722484-cc5c510f4c0d?q=80&w=1200" alt="NeighbourBot" />
-          <div class="work-content">
-            <h3>NeighbourBot AI</h3>
-            <p>
-              A community intelligence platform that enables residents to
-              access services, information, and local resources through
-              conversational AI.
-            </p>
-          </div>
-        </article>
-
-
-        <article class="work-card reveal">
-          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200" alt="MVP" />
-          <div class="work-content">
-            <h3>AI MVP Accelerator</h3>
-            <p>
-              A structured methodology to validate AI ideas rapidly. Includes
-              prototyping, user validation, and scalable system design.
-            </p>
-          </div>
-        </article>
-
-
-        <article class="work-card reveal">
-          <img src="https://images.unsplash.com/photo-1556155092-490a1ba16284?q=80&w=1200" alt="Automation" />
-          <div class="work-content">
-            <h3>Automation and Integration</h3>
-            <p>
-              End-to-end automation that streamlines workflows, reduces manual
-              work, and improves operational performance.
-            </p>
-          </div>
-        </article>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- PROCESS -->
-  <section id="process" class="section-light fade-in">
-
-    <div class="section-container">
-
-      <div class="section-intro">
-        <h2>Approach</h2>
-        <p>
-          A structured, outcome-driven process that ensures every product is
-          aligned with business value and long-term scalability.
-        </p>
-      </div>
-
-      <div class="process-grid">
-
-        <div class="hover-lift">
-          <h4>1. Discovery</h4>
-          <p>Understand the business, users, and opportunities.</p>
-        </div>
-
-        <div class="hover-lift">
-          <h4>2. Validation</h4>
-          <p>Rapid experiments to test key assumptions.</p>
-        </div>
-
-        <div class="hover-lift">
-          <h4>3. Build</h4>
-          <p>Lean development focused on impact.</p>
-        </div>
-
-        <div class="hover-lift">
-          <h4>4. Scale</h4>
-          <p>Architecture and automation for growth.</p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- CONTACT -->
-  <section id="contact" class="fade-in">
-
-    <div class="contact-container">
-
-      <h2>Let’s Build Something Meaningful</h2>
-
-      <p>
-        If you are exploring an AI product, automation strategy, or business
-        transformation initiative, I am open to collaborations and consulting.
-      </p>
-
-      <a href="mailto:your@email.com" class="btn large pulse">
-        Contact Me
-      </a>
-
-    </div>
-
-  </section>
-
-
-  <footer>
-    © 2026 Jun Jie. All rights reserved.
-  </footer>
-
-  <script src="script.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
+*/

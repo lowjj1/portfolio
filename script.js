@@ -1,25 +1,28 @@
-// script.js
+// Scroll reveal animation
+const reveals = document.querySelectorAll('.reveal');
 
-// smooth scroll
-const links = document.querySelectorAll('a[href^="#"]');
-links.forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    const target = document.querySelector(link.getAttribute('href'));
-    if (target) target.scrollIntoView({ behavior: 'smooth' });
-  });
-});
+const revealOnScroll = () => {
+  const trigger = window.innerHeight * 0.85;
 
-// scroll reveal
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
+  reveals.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+
+    if (top < trigger) {
+      el.classList.add('active');
     }
   });
-}, { threshold: 0.15 });
+};
 
+window.addEventListener('scroll', revealOnScroll);
+revealOnScroll();
 
-document.querySelectorAll('.fade-in, .reveal').forEach(el => {
-  observer.observe(el);
+// Navbar background on scroll
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    header.style.background = 'rgba(10,10,11,0.9)';
+  } else {
+    header.style.background = 'rgba(10,10,11,0.6)';
+  }
 });

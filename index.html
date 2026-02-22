@@ -1,115 +1,220 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | AI Product Builder</title>
+  <title>Jun Jie | AI Product Builder</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <header>
     <nav>
-      <h1>Jun Jie</h1>
+      <div class="logo">Jun Jie</div>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#work">Work</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#process">Approach</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h2>AI Product Builder and Automation Specialist</h2>
-      <p>
-        I design and build practical AI products, MVPs, and automation systems that help
-        businesses validate ideas, improve efficiency, and unlock new revenue streams.
-      </p>
-      <div class="hero-actions">
-        <a class="btn" href="#work">View Selected Work</a>
-        <a class="btn secondary" href="#contact">Start a Conversation</a>
-      </div>
-    </div>
-  </section>
+  <!-- HERO -->
+  <section class="hero fade-in">
+    <div class="hero-grid">
 
-  <section id="about">
-    <h2>About</h2>
-    <div class="two-col">
-      <p>
-        I specialise in rapidly turning ideas into working products. My focus is on
-        delivering lean, scalable solutions using AI, machine learning, and modern
-        product engineering practices. I work with startups, teams, and individuals
-        who want to test and launch new ideas with speed and clarity.
-      </p>
-      <p>
-        My background combines product thinking, engineering, and business. I
-        prioritise outcomes over complexity, ensuring every solution is practical,
-        measurable, and aligned with real-world use.
-      </p>
-    </div>
-  </section>
+      <div class="hero-text">
+        <h1>
+          Designing and building AI products that turn ideas into real businesses
+        </h1>
 
-  <section id="work">
-    <h2>Selected Work</h2>
-    <div class="grid work-grid">
-
-      <div class="card">
-        <h3>NeighbourBot AI</h3>
         <p>
-          An intelligent chatbot designed to help residents access community
-          information, services, and local resources. Built to improve digital
-          accessibility and engagement within neighbourhood ecosystems.
+          I help founders and teams validate and launch AI-driven products quickly.
+          My focus is on speed, clarity, and scalable architecture that creates
+          measurable impact.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#work" class="btn">View Work</a>
+          <a href="#contact" class="btn outline">Book a Consultation</a>
+        </div>
+      </div>
+
+      <div class="hero-image float">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200" alt="AI Product" />
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about" class="section-light fade-in">
+    <div class="section-container">
+
+      <div class="section-intro">
+        <h2>About</h2>
+        <p>
+          I combine product thinking, engineering, and AI to build practical
+          solutions. My work focuses on helping businesses reduce risk, improve
+          efficiency, and unlock new opportunities through intelligent systems.
         </p>
       </div>
 
-      <div class="card">
-        <h3>AI MVP Accelerator</h3>
-        <p>
-          A structured framework that helps founders validate AI ideas within days.
-          Focuses on rapid prototyping, user feedback, and scalable product
-          architecture.
-        </p>
-      </div>
+      <div class="about-grid">
 
-      <div class="card">
-        <h3>Automation Systems</h3>
-        <p>
-          Custom automation pipelines that reduce manual work and improve
-          operational efficiency. Includes workflow automation, integrations,
-          and data-driven decision support.
-        </p>
+        <div class="hover-lift">
+          <h3>Product and Business Focus</h3>
+          <p>
+            I prioritise outcomes over complexity. Every solution is designed to
+            validate assumptions, improve decision making, and generate tangible
+            value.
+          </p>
+        </div>
+
+        <div class="hover-lift">
+          <h3>Rapid Execution</h3>
+          <p>
+            I build lean MVPs and automation workflows that move from concept to
+            deployment in weeks, not months.
+          </p>
+        </div>
+
       </div>
 
     </div>
   </section>
 
-  <section id="skills">
-    <h2>Core Capabilities</h2>
-    <div class="skills">
-      <div class="skill">AI Product Strategy</div>
-      <div class="skill">Rapid MVP Development</div>
-      <div class="skill">Machine Learning Applications</div>
-      <div class="skill">Automation and Integration</div>
-      <div class="skill">Product Engineering</div>
-      <div class="skill">Technical Consulting</div>
+
+  <!-- WORK -->
+  <section id="work" class="fade-in">
+
+    <div class="section-container">
+
+      <div class="section-intro">
+        <h2>Selected Work</h2>
+        <p>
+          A selection of projects focused on AI, automation, and scalable
+          product development.
+        </p>
+      </div>
+
+
+      <div class="work-grid">
+
+        <article class="work-card reveal">
+          <img src="https://images.unsplash.com/photo-1526378722484-cc5c510f4c0d?q=80&w=1200" alt="NeighbourBot" />
+          <div class="work-content">
+            <h3>NeighbourBot AI</h3>
+            <p>
+              A community intelligence platform that enables residents to
+              access services, information, and local resources through
+              conversational AI.
+            </p>
+          </div>
+        </article>
+
+
+        <article class="work-card reveal">
+          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200" alt="MVP" />
+          <div class="work-content">
+            <h3>AI MVP Accelerator</h3>
+            <p>
+              A structured methodology to validate AI ideas rapidly. Includes
+              prototyping, user validation, and scalable system design.
+            </p>
+          </div>
+        </article>
+
+
+        <article class="work-card reveal">
+          <img src="https://images.unsplash.com/photo-1556155092-490a1ba16284?q=80&w=1200" alt="Automation" />
+          <div class="work-content">
+            <h3>Automation and Integration</h3>
+            <p>
+              End-to-end automation that streamlines workflows, reduces manual
+              work, and improves operational performance.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
     </div>
+
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>
-      If you are exploring an AI product, automation opportunity, or new business
-      idea, I am open to collaborations and consulting.
-    </p>
-    <a class="btn" href="mailto:your@email.com">Email Me</a>
+
+  <!-- PROCESS -->
+  <section id="process" class="section-light fade-in">
+
+    <div class="section-container">
+
+      <div class="section-intro">
+        <h2>Approach</h2>
+        <p>
+          A structured, outcome-driven process that ensures every product is
+          aligned with business value and long-term scalability.
+        </p>
+      </div>
+
+      <div class="process-grid">
+
+        <div class="hover-lift">
+          <h4>1. Discovery</h4>
+          <p>Understand the business, users, and opportunities.</p>
+        </div>
+
+        <div class="hover-lift">
+          <h4>2. Validation</h4>
+          <p>Rapid experiments to test key assumptions.</p>
+        </div>
+
+        <div class="hover-lift">
+          <h4>3. Build</h4>
+          <p>Lean development focused on impact.</p>
+        </div>
+
+        <div class="hover-lift">
+          <h4>4. Scale</h4>
+          <p>Architecture and automation for growth.</p>
+        </div>
+
+      </div>
+
+    </div>
+
   </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="fade-in">
+
+    <div class="contact-container">
+
+      <h2>Let’s Build Something Meaningful</h2>
+
+      <p>
+        If you are exploring an AI product, automation strategy, or business
+        transformation initiative, I am open to collaborations and consulting.
+      </p>
+
+      <a href="mailto:your@email.com" class="btn large pulse">
+        Contact Me
+      </a>
+
+    </div>
+
+  </section>
+
 
   <footer>
     © 2026 Jun Jie. All rights reserved.
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
